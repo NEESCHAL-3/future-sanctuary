@@ -1,5 +1,7 @@
 # From 2026 to the Future: A Personal Sanctuary
 
+**Live Sanctuary:** [https://neeschal-3.github.io/future-sanctuary/](https://neeschal-3.github.io/future-sanctuary/)
+
 A digital sanctuary and time capsule created in 2026 by Neeschal, born in 2005 in Nepal. This project serves as a permanent, open-source vault for human reflections, promises, and warmth intended for generations yet to come.
 
 ## Architecture
