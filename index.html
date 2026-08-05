@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From 2026 to the Future | Personal Sanctuary by Neeschal</title>
+    <meta name="description" content="A personal human sanctuary of letters, reflections, and commitments written from 2026 for students, future children, and generations to come.">
+    <!-- Google Fonts: Newsreader & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Ambient Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="cursor-trail"></div>
+    <!-- Interactive Canvas for Drifting Petals and Blooming Flowers -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="brand">
+                <div class="brand-logo-wrap">
+                    <svg class="animated-brand-svg" width="32" height="32" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                        <!-- Outer rotating ring -->
+                        <circle class="ring-outer" cx="50" cy="50" r="44" stroke-width="2" stroke-dasharray="6 6" />
+                        <!-- Inner pulsing flower core -->
+                        <path class="petal-core" d="M50 15 C42 30, 42 35, 50 50 C58 35, 58 30, 50 15 Z" fill="rgba(217, 150, 99, 0.4)" stroke-width="2" />
+                        <path class="petal-core" d="M50 85 C42 70, 42 65, 50 50 C58 65, 58 70, 50 85 Z" fill="rgba(217, 150, 99, 0.4)" stroke-width="2" />
+                        <path class="petal-core" d="M15 50 C30 42, 35 42, 50 50 C35 58, 30 58, 15 50 Z" fill="rgba(217, 150, 99, 0.4)" stroke-width="2" />
+                        <path class="petal-core" d="M85 50 C70 42, 65 42, 50 50 C65 58, 70 58, 85 50 Z" fill="rgba(217, 150, 99, 0.4)" stroke-width="2" />
+                        <circle cx="50" cy="50" r="6" fill="var(--accent-gold)" />
+                    </svg>
+                </div>
+                <span class="brand-name">From 2026 to the Future</span>
+            </div>
+
+            <nav class="nav">
+                <button class="nav-btn active" data-view="home-view" id="btn-nav-home">Home</button>
+                <button class="nav-btn" data-view="achievements-view" id="btn-nav-achievements">Earth 2026</button>
+                <button class="nav-btn" data-view="letters-view" id="btn-nav-letters">Letters Vault</button>
+                <button class="nav-btn" data-view="capsule-view" id="btn-nav-capsule">Time Capsule</button>
+                <button class="audio-toggle" id="btn-audio-toggle" aria-label="Toggle Quiet Soundscape">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    </svg>
+                    <span id="audio-text">Quiet Ambience</span>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- HOME VIEW -->
+            <section id="home-view" class="view active">
+                <div class="hero">
+                    <span class="subtitle-tag">Personal Sanctuary by Neeschal</span>
+                    
+                    <h1 class="headline">
+                        Voices from 2026 to <br>
+                        <span class="highlight">Future Generations & Every Living Soul</span>
+                    </h1>
+
+                    <p class="lead-text">
+                        A handwritten sanctuary holding my reflections on what humanity achieved up to 2026, 
+                        and my sincere promises to students, future children, teachers, healers, and the generations yet to come.
+                    </p>
+
+                    <div class="actions">
+                        <button class="primary-btn" id="btn-explore-achievements">
+                            <span>Earth in 2026</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                        <button class="secondary-btn" id="btn-open-capsule">
+                            <span>Time Capsule to 2100</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </button>
+                        <button class="secondary-btn" id="btn-write-letter">
+                            <span>Leave Your Letter</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="canvas-note">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 8v8M8 12l4 4 4-4"></path>
+                        </svg>
+                        <span>Click anywhere on the screen to bloom a golden flower</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACHIEVEMENTS VIEW: OUR SHARED EARTH UP TO 2026 -->
+            <section id="achievements-view" class="view">
+                <div class="page-intro">
+                    <h2 class="page-title">Looking Back: What We Achieved by 2026</h2>
+                    <p class="page-desc">Honoring the steps humanity has taken from past decades up to this present year.</p>
+                </div>
+
+                <!-- Earth Visual Showcase with Animated 3D Spinning Sphere & Orbit -->
+                <div class="earth-exhibit-card">
+                    <div class="earth-stage">
+                        <div class="orbital-ring"></div>
+                        <div class="earth-image-container" id="earth-globe-trigger">
+                            <img src="earth.png" alt="Spinning Planet Earth 2026" class="earth-img">
+                            <div class="earth-glow-atmosphere"></div>
+                        </div>
+                        <span class="earth-click-hint">Click the Earth for aura pulse</span>
+                    </div>
+                    <div class="earth-text-content">
+                        <span class="exhibit-tag">OUR SHARED HOME</span>
+                        <h3 class="exhibit-heading">Planet Earth in 2026</h3>
+                        <p class="exhibit-body">
+                            Standing in 2026 at age 21, I look upon our spinning blue planet not as a resource to exploit, 
+                            but as a sacred home we hold in trust for future generations. Over the past years, 
+                            humanity initiated the largest environmental restoration and clean energy efforts in history.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3 Pillars of Achievement -->
+                <div class="pillars-grid">
+                    <article class="pillar-card reveal-on-scroll">
+                        <div class="pillar-number">01</div>
+                        <h4 class="pillar-title">Planetary Healing & Reforestation</h4>
+                        <p class="pillar-desc">
+                            From 2020 to 2026, over 40 billion native trees were planted worldwide. Critical rainforest reserves, ocean sanctuaries, and river basins were permanently granted constitutional protection.
+                        </p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-number">02</div>
+                        <h4 class="pillar-title">Universal Education & Empathy</h4>
+                        <p class="pillar-desc">
+                            Digital divide barriers collapsed. Every student, regardless of region, gained access to open-source learning libraries, mental health resources, and collaborative problem-solving spaces.
+                        </p>
+                    </article>
+
+                    <article class="pillar-card">
+                        <div class="pillar-number">03</div>
+                        <h4 class="pillar-title">Clean Energy & Human Dignity</h4>
+                        <p class="pillar-desc">
+                            Solar, wind, and next-generation fusion grids achieved grid parity across six continents. Innovation shifted away from profit-seeking toward universal human flourishing and healthcare equity.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- LETTERS VAULT VIEW -->
+            <section id="letters-view" class="view">
+                <div class="page-intro">
+                    <h2 class="page-title">Global Letters Vault</h2>
+                    <p class="page-desc">Read messages written by Neeschal, or leave your own letter for future generations.</p>
+                </div>
+
+                <!-- Search & Action Bar -->
+                <div class="vault-toolbar">
+                    <div class="search-box">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="vault-search" placeholder="Search letters by author, country, or keyword...">
+                    </div>
+                    <button class="primary-btn btn-sm" id="btn-vault-write">
+                        <span>Write Your Letter</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Audience Filter Tabs -->
+                <div class="audience-tabs">
+                    <button class="tab-btn active" data-filter="all" id="tab-all">All Letters</button>
+                    <button class="tab-btn" data-filter="family" id="tab-family">To Family</button>
+                    <button class="tab-btn" data-filter="friends" id="tab-friends">To Friends</button>
+                    <button class="tab-btn" data-filter="love" id="tab-love">To Love</button>
+                    <button class="tab-btn" data-filter="broken" id="tab-broken">To The Broken & Healing</button>
+                    <button class="tab-btn" data-filter="students" id="tab-students">To Students</button>
+                    <button class="tab-btn" data-filter="future" id="tab-future">To Future Children</button>
+                    <button class="tab-btn" data-filter="teachers" id="tab-teachers">To Teachers</button>
+                    <button class="tab-btn" data-filter="healers" id="tab-healers">To Caregivers & Healers</button>
+                    <button class="tab-btn" data-filter="builders" id="tab-builders">To Laborers & Builders</button>
+                    <button class="tab-btn" data-filter="everyone" id="tab-everyone">To Everyone</button>
+                </div>
+
+                <!-- Letters Grid -->
+                <div class="letters-grid" id="letters-grid">
+                    <!-- Dynamic JavaScript Rendering -->
+                </div>
+            </section>
+
+            <!-- TIME CAPSULE VIEW (SLIDER FROM 2026 TO 2100) -->
+            <section id="capsule-view" class="view">
+                <div class="page-intro">
+                    <h2 class="page-title">Time Capsule: Letters Sent to Future Decades</h2>
+                    <p class="page-desc">Drag the timeline slider to read letters dispatched by Neeschal into future centuries.</p>
+                </div>
+
+                <div class="capsule-container">
+                    <div class="slider-wrapper">
+                        <span class="slider-year">2026</span>
+                        <input type="range" id="capsule-slider" min="2026" max="2100" step="1" value="2026">
+                        <span class="slider-year">2100</span>
+                    </div>
+
+                    <article class="letter-card-hero" id="capsule-card">
+                        <div class="card-year" id="capsule-display-year">2026</div>
+                        <h3 class="card-title" id="capsule-display-title">Dispatch from Neeschal (2026)</h3>
+                        <p class="card-body-text" id="capsule-display-text">
+                            Writing to you in 2026 at 21 years old. Born in 2005 in Nepal, I pledge to use my youth, code, and voice to protect our remaining green forests, teach with patience, and ensure technology remains a humble servant to human kindness.
+                        </p>
+                        <div class="card-footer-note" id="capsule-display-tag">NEESCHAL (AGE 21)</div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Written with genuine warmth for students, dreamers, future children, and all humanity.</p>
+        </footer>
+    </div>
+
+    <!-- WRITE A LETTER MODAL -->
+    <div class="modal-bg" id="modal-bg">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal" aria-label="Close dialog">&times;</button>
+            <h3 class="modal-heading">Leave Your Letter to the Future</h3>
+            <p class="modal-subheading">Your name and message will be displayed on the global vault for visitors worldwide.</p>
+
+            <form id="letter-form">
+                <div class="form-row">
+                    <div class="form-group flex-1">
+                        <label for="author-input">Your Name or Signature</label>
+                        <input type="text" id="author-input" placeholder="e.g. Maya Lin, Alex, A Quiet Traveler" required maxlength="40">
+                    </div>
+                    <div class="form-group flex-1">
+                        <label for="location-input">City & Country</label>
+                        <input type="text" id="location-input" placeholder="e.g. Nepal or Japan" required maxlength="50">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="audience-select">Who are you writing to?</label>
+                    <select id="audience-select" required>
+                        <option value="family">To Family & Ancestors</option>
+                        <option value="friends">To Kindred Friends</option>
+                        <option value="love">To Love</option>
+                        <option value="broken">To The Broken & Healing</option>
+                        <option value="students">To Students & Learners</option>
+                        <option value="future">To Future Children</option>
+                        <option value="teachers">To Teachers & Mentors</option>
+                        <option value="healers">To Caregivers & Healers</option>
+                        <option value="builders">To Workers & Builders</option>
+                        <option value="everyone">To Everyone on Earth</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="letter-text">Your Message</label>
+                    <textarea id="letter-text" placeholder="Write from the heart. Share what you wish future generations to remember about hope, nature, and human warmth..." required maxlength="360" rows="5"></textarea>
+                    <div class="char-count"><span id="char-num">0</span> / 360</div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Inscribe & Publish Letter</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-notification" id="toast-notification"></div>
+
+    <!-- Supabase JS Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
